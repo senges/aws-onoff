@@ -1,0 +1,23 @@
+# AWS Accounts pool
+[AwsAccounts]
+    [AwsAccounts.foo]
+    AwsKeyId = ""
+    AwsSecretKey = ""
+    AwsToken = ""           # Could be left empty
+
+    [AwsAccounts.bar]
+    AwsKeyId = ""
+    AwsSecretKey = ""
+    AwsToken = ""           # Could be left empty
+
+# Instances to be managed
+[Instance]
+    [Instance.toto]
+    InstanceId 	= ""
+    Region = "eu-west-3"
+    AwsAccount = "foo"
+
+    [Instance.titi]
+    InstanceId 	= ""
+    Region = "eu-west-3"
+    AwsAccount = "bar"
